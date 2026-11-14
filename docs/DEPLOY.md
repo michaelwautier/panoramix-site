@@ -39,10 +39,10 @@ exit
 
 ## 3. Caddy
 
-Add this block to the Caddyfile (replace `203.0.113.10` with the VPS IP), then `sudo systemctl reload caddy`:
+Add this block to the Caddyfile (Hetzner VPS IP), then `sudo systemctl reload caddy`:
 
 ```caddyfile
-http://203.0.113.10 {
+http://167.233.157.181 {
 	root * /var/www/panoramix-site
 
 	# Never serve repository internals
@@ -84,10 +84,10 @@ exit
 Repository **Settings › Secrets and variables › Actions**, or with the GitHub CLI from your machine:
 
 ```sh
-gh secret set VPS_HOST --body "203.0.113.10"
+gh secret set VPS_HOST --body "167.233.157.181"
 gh secret set VPS_USER --body "deploy"
 gh secret set VPS_SSH_KEY < ./panoramix_actions
-ssh-keyscan -p 22 203.0.113.10 | gh secret set VPS_KNOWN_HOSTS
+ssh-keyscan -p 22 167.233.157.181 | gh secret set VPS_KNOWN_HOSTS
 # Only if SSH does not listen on 22:
 # gh secret set VPS_PORT --body "2222"
 ```
