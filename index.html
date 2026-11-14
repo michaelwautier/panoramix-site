@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Panoramix – Restaurant à Saint-Leu, La Réunion | Burgers, tacos, paninis</title>
+  <meta name="description" content="Restaurant Panoramix à Saint-Leu (La Réunion) : burgers, tacos, paninis et barquettes créoles faits maison, sur place ou à emporter, avec vue sur la côte ouest.">
+  <meta name="theme-color" content="#FFC93C">
+
+  <meta property="og:type" content="restaurant">
+  <meta property="og:title" content="Panoramix – Restaurant à Saint-Leu">
+  <meta property="og:description" content="Burgers, tacos, paninis et barquettes créoles faits maison, avec la vue en prime.">
+  <meta property="og:locale" content="fr_FR">
+
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Luckiest+Guy&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Restaurant Panoramix",
+    "servesCuisine": ["Burgers", "Tacos", "Paninis", "Cuisine créole"],
+    "priceRange": "€€",
+    "telephone": "+262262715878",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2 bis rue Jean-Baptiste de Villèle",
+      "postalCode": "97416",
+      "addressLocality": "Saint-Leu",
+      "addressRegion": "La Réunion",
+      "addressCountry": "FR"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Wednesday", "Thursday"], "opens": "17:00", "closes": "22:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday", "Saturday", "Sunday"], "opens": "11:00", "closes": "14:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday", "Saturday", "Sunday"], "opens": "17:00", "closes": "22:00" }
+    ],
+    "sameAs": ["https://www.instagram.com/restaurant.panoramix974/"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#menu">Aller au menu</a>
+
+  <header class="site-header container">
+    <a class="brand" href="#top" aria-label="Panoramix, accueil">
+      <img class="brand__logo" src="assets/logo.svg" alt="" width="64" height="48">
+      <span class="brand__name">Panoramix</span>
+    </a>
+    <nav class="site-nav" aria-label="Navigation principale">
+      <a href="#menu">Menu</a>
+      <a href="#horaires">Horaires</a>
+      <a class="btn btn--yellow btn--small" href="tel:+262262715878">Appeler</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="container hero-wrap">
+      <div class="hero">
+        <img class="hero__art" src="assets/hero.svg" alt="" aria-hidden="true">
+        <div class="hero__content">
+          <p class="bubble hero__tag">
+            <span>Saint-Leu · sur place &amp; à emporter</span>
+            <span class="hero__tag-sep" aria-hidden="true">·</span>
+            <a class="status" href="#horaires" data-open-status>
+              <span class="status__dot" aria-hidden="true"></span>
+              <span class="status__label">Horaires</span>
+            </a>
+          </p>
+          <h1 class="hero__title">Panoramix</h1>
+          <p class="bubble hero__lead">Burgers, tacos, paninis et barquettes créoles, tout fait maison. Avec la vue en prime.</p>
+          <div class="hero__actions">
+            <a class="btn btn--red" href="#menu">Voir le menu</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- TODO: replace placeholders with real photos (img with width/height + alt) -->
+      <div class="polaroids">
+        <figure class="polaroid polaroid--tilt-left">
+          <div class="placeholder placeholder--sea">Photo : la vue</div>
+          <figcaption>La vue depuis la terrasse</figcaption>
+        </figure>
+        <figure class="polaroid polaroid--tilt-right">
+          <div class="placeholder placeholder--sand">Photo : la salle</div>
+          <figcaption>La salle</figcaption>
+        </figure>
+        <figure class="polaroid polaroid--tilt-slight">
+          <div class="placeholder placeholder--coral">Photo : le burger Panoramix</div>
+          <figcaption>Le Panoramix, burger de la maison</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Menu -->
+    <section id="menu" class="menu">
+      <div class="container">
+        <h2 class="section-title section-title--light">Le menu</h2>
+        <p class="menu__intro">Fait maison, frites fraîches comprises. Sur place ou à emporter.</p>
+
+        <div class="menu__grid">
+          <article class="menu-card">
+            <h3 class="menu-card__title">Burgers</h3>
+            <ul class="menu-card__list">
+              <li class="dish"><div><p class="dish__name">Le Classique</p><p class="dish__desc">Steak, salade, tomate</p></div><p class="dish__price">6,00 / 8,50 €</p></li>
+              <li class="dish"><div><p class="dish__name">Le Cheeseburger</p><p class="dish__desc">Steak, cheddar, salade, tomate</p></div><p class="dish__price">6,50 / 9,50 €</p></li>
+              <li class="dish"><div><p class="dish__name">Le Panoramix <span class="star" role="img" aria-label="Spécialité de la maison" title="Spécialité de la maison"></span></p><p class="dish__desc">Steak, cheddar, bacon, oignons confits, sauce au choix</p></div><p class="dish__price">8,50 / 13,50 €</p></li>
+            </ul>
+            <p class="menu-card__note">Prix simple / double. Formule + frites fraîches : +2,00 €. Aussi : poulet, fish, kebab, végétarien…</p>
+          </article>
+
+          <article class="menu-card">
+            <h3 class="menu-card__title">Tacos</h3>
+            <ul class="menu-card__list">
+              <li class="dish"><div><p class="dish__name">Le Kebab</p><p class="dish__desc">Kebab maison (poulet), oignons crus</p></div><p class="dish__price">9,00 / 15,00 €</p></li>
+              <li class="dish"><div><p class="dish__name">Le Rougail</p><p class="dish__desc">Rougail saucisse maison, gros piment à la demande</p></div><p class="dish__price">9,50 / 15,50 €</p></li>
+              <li class="dish"><div><p class="dish__name">Le Panoramix <span class="star" role="img" aria-label="Spécialité de la maison" title="Spécialité de la maison"></span></p><p class="dish__desc">Bœuf haché, bacon, oignons confits, sauce au choix</p></div><p class="dish__price">9,50 / 15,50 €</p></li>
+            </ul>
+            <p class="menu-card__note">Prix simple / double. Avec frites fraîches et sauce fromagère maison.</p>
+          </article>
+
+          <article class="menu-card">
+            <h3 class="menu-card__title">Paninis</h3>
+            <ul class="menu-card__list">
+              <li class="dish"><div><p class="dish__name">Végétarien</p><p class="dish__desc">Salade, tomate, poivron, oignons confits</p></div><p class="dish__price">5,00 €</p></li>
+              <li class="dish"><div><p class="dish__name">Poulet</p><p class="dish__desc">Poulet mariné</p></div><p class="dish__price">5,50 €</p></li>
+              <li class="dish"><div><p class="dish__name">Agneau</p><p class="dish__desc">Gigot d'agneau basse température, poivrons grillés</p></div><p class="dish__price">6,50 €</p></li>
+            </ul>
+            <p class="menu-card__note">Emmental et mozzarella. Paninis Nutella dès 4,00 €.</p>
+          </article>
+
+          <article class="menu-card">
+            <h3 class="menu-card__title">Barquettes créoles</h3>
+            <ul class="menu-card__list">
+              <li class="dish"><div><p class="dish__name">La Poulet</p><p class="dish__desc">Poulet rôti et mariné</p></div><p class="dish__price">7,50 €</p></li>
+              <li class="dish"><div><p class="dish__name">La Rougail</p><p class="dish__desc">Rougail saucisse maison, saucisse locale artisanale</p></div><p class="dish__price">8,50 €</p></li>
+              <li class="dish"><div><p class="dish__name">L'Oriental</p><p class="dish__desc">Gigot d'agneau basse température, poivron grillé</p></div><p class="dish__price">9,50 €</p></li>
+            </ul>
+            <p class="menu-card__note">Servies avec riz grain.</p>
+          </article>
+
+          <article class="menu-card">
+            <h3 class="menu-card__title">Frites &amp; à côté</h3>
+            <ul class="menu-card__list">
+              <li class="dish"><div><p class="dish__name">Frites fraîches</p><p class="dish__desc">Petite / grande</p></div><p class="dish__price">3,00 / 4,00 €</p></li>
+              <li class="dish"><div><p class="dish__name">Bouchons, samoussas, nems</p><p class="dish__desc">À la pièce</p></div><p class="dish__price">dès 0,70 €</p></li>
+              <li class="dish"><div><p class="dish__name">Menu enfant</p><p class="dish__desc">Viande au choix, frites fraîches ou riz grain</p></div><p class="dish__price">6,50 €</p></li>
+            </ul>
+            <p class="menu-card__note">Menu enfant jusqu'à 6 ans.</p>
+          </article>
+
+          <article class="menu-card">
+            <h3 class="menu-card__title">Crêpes</h3>
+            <ul class="menu-card__list">
+              <li class="dish"><div><p class="dish__name">Sucre beurre</p></div><p class="dish__price">2,50 €</p></li>
+              <li class="dish"><div><p class="dish__name">Caramel salé</p></div><p class="dish__price">3,50 €</p></li>
+              <li class="dish"><div><p class="dish__name">Nutella banane</p></div><p class="dish__price">4,50 €</p></li>
+            </ul>
+            <p class="menu-card__note">Nature, sucre, confiture, Nutella…</p>
+          </article>
+        </div>
+
+        <div class="menu__footer">
+          <!-- TODO: link to the full menu (PDF or Instagram highlight) -->
+          <a class="btn btn--yellow" href="#">Voir la carte complète</a>
+          <p>Suppléments et sauces maison sur la carte. Sauces classiques offertes.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Opening hours & access -->
+    <section id="horaires" class="container info">
+      <div class="card hours">
+        <div class="hours__head">
+          <h2 class="section-title">Horaires</h2>
+          <span class="badge" data-open-badge>Horaires</span>
+        </div>
+        <ul class="hours__list">
+          <li data-day="1"><span>Lundi</span><span>Fermé</span></li>
+          <li data-day="2"><span>Mardi</span><span>Fermé</span></li>
+          <li data-day="3"><span>Mercredi</span><span>17h – 22h</span></li>
+          <li data-day="4"><span>Jeudi</span><span>17h – 22h</span></li>
+          <li data-day="5"><span>Vendredi</span><span>11h – 14h · 17h – 22h</span></li>
+          <li data-day="6"><span>Samedi</span><span>11h – 14h · 17h – 22h</span></li>
+          <li data-day="0"><span>Dimanche</span><span>11h – 14h · 17h – 22h</span></li>
+        </ul>
+      </div>
+
+      <div id="acces" class="info__side">
+        <div class="call-box">
+          <p>Une table, une commande à emporter ou un service traiteur ? Un coup de fil.</p>
+          <a class="btn btn--red" href="tel:+262262715878">0262 71 58 78</a>
+        </div>
+
+        <div class="card address">
+          <p class="address__lines"><strong>2 bis rue Jean-Baptiste de Villèle</strong><br>97416 Saint-Leu, La Réunion</p>
+          <a class="address__link" href="https://www.google.com/maps/search/?api=1&amp;query=2%20bis%20rue%20Jean%20Baptiste%20de%20Vill%C3%A8le%2097416%20Saint-Leu" target="_blank" rel="noopener">Itinéraire →</a>
+        </div>
+
+        <div class="socials">
+          <a class="btn btn--light" href="https://www.instagram.com/restaurant.panoramix974/" target="_blank" rel="noopener">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/></svg>
+            @restaurant.panoramix974
+          </a>
+          <!-- TODO: real Facebook page URL -->
+          <a class="btn btn--light" href="#" target="_blank" rel="noopener">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h-2.5A3.5 3.5 0 0 0 9 6.5V10H6.5v3.5H9V21h3.5v-7.5H15l.5-3.5h-3V7a1 1 0 0 1 1-1H15z"/></svg>
+            Restaurant Panoramix
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <span class="brand__name brand__name--footer">Panoramix</span>
+      <p>2 bis rue J.-B. de Villèle, Saint-Leu · <a class="nowrap" href="tel:+262262715878">0262 71 58 78</a> · <a href="https://www.instagram.com/restaurant.panoramix974/" target="_blank" rel="noopener">Instagram</a> · <a href="#" target="_blank" rel="noopener">Facebook</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
