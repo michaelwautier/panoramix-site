@@ -2,6 +2,44 @@
    Panoramix – comic / lagoon theme
    ========================================================================== */
 
+/* Fonts are self-hosted (latin subset, from Fontsource) so no visitor data
+   goes to Google. Licence: SIL Open Font License 1.1, see assets/fonts/README.md. */
+@font-face {
+  font-family: "Lobster";
+  src: url("../assets/fonts/lobster-latin-400-normal.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Luckiest Guy";
+  src: url("../assets/fonts/luckiest-guy-latin-400-normal.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("../assets/fonts/nunito-latin-400-normal.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("../assets/fonts/nunito-latin-600-normal.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("../assets/fonts/nunito-latin-800-normal.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --ink: #1B1B1B;
   --paper: #FFF6E0;

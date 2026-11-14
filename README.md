@@ -14,6 +14,7 @@ js/main.js        Open/closed status and today's highlight, in La Réunion's tim
 assets/hero.webp  Hero photo (terrace, sea view); hero.svg is the old illustration
 assets/og-image.jpg  1200x630 image shown when the site is shared (Facebook, WhatsApp…)
 assets/logo.svg   Logo icon, also used as favicon
+assets/fonts/     Self-hosted web fonts (no call to Google Fonts)
 robots.txt, sitemap.xml  For search engines; add new pages to sitemap.xml
 ```
 
