@@ -8,6 +8,7 @@ No build step: plain HTML, CSS and JavaScript.
 
 ```
 index.html        Page markup (French content), SEO meta and schema.org data
+carte.html        Full menu with all prices (linked from "Voir la carte complète")
 css/styles.css    Comic / lagoon theme, responsive (breakpoints at 720px and 480px)
 js/main.js        Open/closed status and today's highlight, in La Réunion's time zone
 assets/hero.svg   Hero illustration (west coast view from the counter)
@@ -37,5 +38,4 @@ Edit both places when hours change:
 
 - Real photos (view, dining room, Panoramix burger) in place of the striped placeholders
 - Facebook page URL (search for `TODO` in `index.html`)
-- Link for "Voir la carte complète"
 - Confirm prices (menu screenshots date from about a year ago)
