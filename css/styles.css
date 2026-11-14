@@ -391,6 +391,11 @@ a { color: inherit; }
   gap: 12px;
   margin-bottom: 16px;
 }
+/* Luckiest Guy sits high in its line box: nudge it so it centers with the badge */
+.hours__head .section-title {
+  line-height: 1;
+  padding-top: 0.14em;
+}
 
 .badge {
   padding: 8px 14px;
