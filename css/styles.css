@@ -219,8 +219,8 @@ a { color: inherit; }
 
 .hero__lead {
   max-width: 580px;
-  padding: 14px 20px;
-  font-size: clamp(19px, 2.2vw, 26px);
+  padding: 12px 18px;
+  font-size: clamp(17px, 1.8vw, 21px);
   border-radius: 16px;
 }
 
