@@ -22,6 +22,10 @@ Open `index.html` in a browser, or serve the folder:
 python3 -m http.server 8000
 ```
 
+## Deployment
+
+Merging into `main` publishes the site on GitHub Pages through `.github/workflows/pages.yml` (Settings › Pages › Source: GitHub Actions).
+
 ## Opening hours
 
 Edit both places when hours change:
