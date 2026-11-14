@@ -11,8 +11,10 @@ index.html        Page markup (French content), SEO meta and schema.org data
 carte.html        Full menu with all prices (linked from "Voir la carte complète")
 css/styles.css    Comic / lagoon theme, responsive (breakpoints at 720px and 480px)
 js/main.js        Open/closed status and today's highlight, in La Réunion's time zone
-assets/hero.svg   Hero illustration (west coast view from the counter)
+assets/hero.webp  Hero photo (terrace, sea view); hero.svg is the old illustration
+assets/og-image.jpg  1200x630 image shown when the site is shared (Facebook, WhatsApp…)
 assets/logo.svg   Logo icon, also used as favicon
+robots.txt, sitemap.xml  For search engines; add new pages to sitemap.xml
 ```
 
 ## Run locally
@@ -36,5 +38,4 @@ Edit both places when hours change:
 
 ## TODO
 
-- Real photos (view, dining room, Panoramix burger) in place of the striped placeholders
 - Confirm prices (menu screenshots date from about a year ago)
