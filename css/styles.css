@@ -195,6 +195,7 @@ a { color: inherit; }
   background: #9A9A9A;
 }
 .status.is-open .status__dot { background: #2E9E4F; }
+.status.is-soon .status__dot { background: #F2A93B; }
 .status.is-closed .status__dot { background: var(--red); }
 
 .hero__title {
@@ -401,6 +402,7 @@ a { color: inherit; }
   background: var(--paper);
 }
 .badge.is-open { background: var(--lagoon); color: var(--white); }
+.badge.is-soon { background: var(--yellow); color: var(--ink); }
 .badge.is-closed { background: var(--red); color: var(--white); }
 
 .hours__list { list-style: none; margin: 0; padding: 0; }
