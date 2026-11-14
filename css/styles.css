@@ -351,6 +351,59 @@ a { color: inherit; }
   color: var(--muted);
 }
 
+/* ---------- Full menu page (carte.html) ---------- */
+
+.menu--page { border-bottom: 0; padding-block: 48px 72px; }
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 36px;
+}
+.chips a {
+  padding: 8px 16px;
+  font-weight: 800;
+  text-decoration: none;
+  background: var(--paper);
+  border: 3px solid var(--ink);
+  border-radius: 999px;
+  box-shadow: 3px 3px 0 var(--ink);
+}
+.chips a:hover { background: var(--yellow); }
+
+.menu__grid--full { align-items: start; }
+.menu__grid--full .menu-card { scroll-margin-top: 24px; }
+
+.menu-card__lead { margin: -4px 0 0; font-weight: 600; color: var(--muted); }
+
+.menu-card__sub {
+  margin: 14px 0 0;
+  font-family: var(--font-comic);
+  font-weight: 400;
+  font-size: 21px;
+  letter-spacing: 0.5px;
+  color: var(--lagoon);
+}
+.menu-card__sub--first { margin-top: 0; }
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.tags li {
+  padding: 6px 12px;
+  font-weight: 800;
+  font-size: 15px;
+  background: var(--white);
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+}
+
 .menu__footer {
   display: flex;
   flex-wrap: wrap;
