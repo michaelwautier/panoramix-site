@@ -37,10 +37,32 @@
     };
   }
 
-  function isOpenAt(day, minutes) {
-    return (OPENING_HOURS[day] || []).some(
-      ([open, close]) => minutes >= open * 60 && minutes < close * 60
-    );
+  // Show "opening soon" this many minutes before a service starts.
+  const SOON_THRESHOLD_MINUTES = 60;
+
+  function formatHour(hour) {
+    return `${hour}h`;
+  }
+
+  /**
+   * Returns { state: "open" | "soon" | "closed", label }.
+   */
+  function getStatus(day, minutes) {
+    const slots = OPENING_HOURS[day] || [];
+
+    if (slots.some(([open, close]) => minutes >= open * 60 && minutes < close * 60)) {
+      return { state: "open", label: "Ouvert en ce moment" };
+    }
+
+    const nextSlot = slots.find(([open]) => {
+      const minutesBefore = open * 60 - minutes;
+      return minutesBefore > 0 && minutesBefore <= SOON_THRESHOLD_MINUTES;
+    });
+    if (nextSlot) {
+      return { state: "soon", label: `Ouvre bientôt · ${formatHour(nextSlot[0])}` };
+    }
+
+    return { state: "closed", label: "Fermé en ce moment" };
   }
 
   function render() {
@@ -51,19 +73,19 @@
       return; // Very old browser without time zone support: keep the static fallback.
     }
 
-    const open = isOpenAt(now.day, now.minutes);
-    const label = open ? "Ouvert en ce moment" : "Fermé en ce moment";
-    const stateClass = open ? "is-open" : "is-closed";
+    const { state, label } = getStatus(now.day, now.minutes);
+    const stateClass = `is-${state}`;
+    const stateClasses = ["is-open", "is-soon", "is-closed"];
 
     document.querySelectorAll("[data-open-status]").forEach((element) => {
-      element.classList.remove("is-open", "is-closed");
+      element.classList.remove(...stateClasses);
       element.classList.add(stateClass);
       const text = element.querySelector(".status__label");
       if (text) text.textContent = label;
     });
 
     document.querySelectorAll("[data-open-badge]").forEach((element) => {
-      element.classList.remove("is-open", "is-closed");
+      element.classList.remove(...stateClasses);
       element.classList.add(stateClass);
       element.textContent = label;
     });
