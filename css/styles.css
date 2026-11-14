@@ -110,7 +110,14 @@ a { color: inherit; }
   gap: 10px;
   text-decoration: none;
 }
-.brand__logo { width: 64px; height: auto; }
+.brand__logo {
+  width: 76px;
+  height: auto;
+  aspect-ratio: 1;
+  border: 3px solid var(--ink);
+  border-radius: 50%;
+  box-shadow: 3px 3px 0 var(--ink);
+}
 .brand__name {
   font-family: var(--font-brand);
   font-size: 38px;
@@ -376,6 +383,15 @@ a { color: inherit; }
 .menu__grid--full { align-items: start; }
 .menu__grid--full .menu-card { scroll-margin-top: 24px; }
 
+/* Masonry: js/masonry.js sets each card's row span from its height so cards
+   of different heights pack together instead of leaving gaps in grid rows.
+   Without JS, the plain grid above still works. */
+.menu__grid--full.is-masonry {
+  grid-auto-rows: 4px;
+  row-gap: 0;
+}
+.menu__grid--full.is-masonry .menu-card { margin-bottom: 28px; }
+
 .menu-card__lead { margin: -4px 0 0; font-weight: 600; color: var(--muted); }
 
 .menu-card__sub {
@@ -534,7 +550,7 @@ a { color: inherit; }
 
 @media (max-width: 720px) {
   .container { padding-inline: 16px; }
-  .brand__logo { width: 48px; }
+  .brand__logo { width: 56px; }
   .brand__name { font-size: 32px; }
   .site-nav > a:not(.btn) { padding: 12px 8px; }
 
