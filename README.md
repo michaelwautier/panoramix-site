@@ -37,5 +37,4 @@ Edit both places when hours change:
 ## TODO
 
 - Real photos (view, dining room, Panoramix burger) in place of the striped placeholders
-- Facebook page URL (search for `TODO` in `index.html`)
 - Confirm prices (menu screenshots date from about a year ago)
