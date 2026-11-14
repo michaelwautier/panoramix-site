@@ -110,7 +110,14 @@ a { color: inherit; }
   gap: 10px;
   text-decoration: none;
 }
-.brand__logo { width: 64px; height: auto; }
+.brand__logo {
+  width: 64px;
+  height: auto;
+  aspect-ratio: 1;
+  border: 3px solid var(--ink);
+  border-radius: 14px;
+  box-shadow: 3px 3px 0 var(--ink);
+}
 .brand__name {
   font-family: var(--font-brand);
   font-size: 38px;
@@ -373,8 +380,18 @@ a { color: inherit; }
 }
 .chips a:hover { background: var(--yellow); }
 
-.menu__grid--full { align-items: start; }
-.menu__grid--full .menu-card { scroll-margin-top: 24px; }
+/* Masonry-style: cards of different heights stack in columns (read top to
+   bottom, like a printed menu) instead of leaving gaps in grid rows. */
+.menu__grid--full {
+  display: block;
+  columns: 3 320px;
+  column-gap: 28px;
+}
+.menu__grid--full .menu-card {
+  break-inside: avoid;
+  margin-bottom: 28px;
+  scroll-margin-top: 24px;
+}
 
 .menu-card__lead { margin: -4px 0 0; font-weight: 600; color: var(--muted); }
 

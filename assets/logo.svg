@@ -1,11 +1,46 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 48">
-  <path d="M9 8v9M12 8v9M15 8v9M9 17q3 5 6 0M12 20v20" fill="none" stroke="#1F2A44" stroke-width="2.4" stroke-linecap="round"/>
-  <path d="M51 8c5 4 5 12 2 17v15h-2.6V8z" fill="#1F2A44"/>
-  <path d="M20 22q0-12 12-12t12 12z" fill="#C8873A" stroke="#1B1B1B" stroke-width="1.6" stroke-linejoin="round"/>
-  <path d="M27 15h1.5M33 13h1.5M37 17h1.5M30 18h1.5" stroke="#FFF6E0" stroke-width="1.4" stroke-linecap="round"/>
-  <rect x="20" y="23" width="24" height="3" rx="1.5" fill="#D9342B"/>
-  <rect x="19" y="27" width="26" height="4.5" rx="2.2" fill="#5A3A22"/>
-  <path d="M19 33q3-2.5 6 0t6 0t6 0t6 0q1.5-1.2 2 0" fill="none" stroke="#7CB342" stroke-width="2.4" stroke-linecap="round"/>
-  <rect x="20" y="35" width="24" height="5" rx="2.5" fill="#C8873A" stroke="#1B1B1B" stroke-width="1.6"/>
-  <path d="M4 43h56" stroke="#1B1B1B" stroke-width="2.4" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-3 -203 1000 1000" width="512" height="512" role="img" aria-label="Panoramix">
+  <defs>
+    <linearGradient id="bun" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8F6B33"/>
+      <stop offset="1" stop-color="#D2A852"/>
+    </linearGradient>
+    <linearGradient id="patty" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7A4A2A"/>
+      <stop offset="1" stop-color="#5A341C"/>
+    </linearGradient>
+  </defs>
+  <rect x="-3" y="-203" width="1000" height="1000" fill="#F2BF3E"/>
+
+  <!-- Dome and plate -->
+  <g fill="none" stroke="#FFF8EC" stroke-linecap="round">
+    <path d="M128 474 A375 375 0 0 1 280 232" stroke-width="12"/>
+    <path d="M714 232 A375 375 0 0 1 866 474" stroke-width="12"/>
+    <path d="M62 488 H933" stroke-width="22"/>
+  </g>
+
+  <!-- Stars and sun -->
+  <g fill="#FFF8EC"><polygon points="327.0,182.0 333.3,197.3 349.8,198.6 337.3,209.3 341.1,225.4 327.0,216.8 312.9,225.4 316.7,209.3 304.2,198.6 320.7,197.3"/><polygon points="408.0,140.0 416.5,160.4 438.4,162.1 421.7,176.4 426.8,197.9 408.0,186.4 389.2,197.9 394.3,176.4 377.6,162.1 399.5,160.4"/><polygon points="590.0,140.0 598.5,160.4 620.4,162.1 603.7,176.4 608.8,197.9 590.0,186.4 571.2,197.9 576.3,176.4 559.6,162.1 581.5,160.4"/><polygon points="671.0,182.0 677.3,197.3 693.8,198.6 681.3,209.3 685.1,225.4 671.0,216.8 656.9,225.4 660.7,209.3 648.2,198.6 664.7,197.3"/></g>
+  <circle cx="496" cy="124" r="26" fill="#E8A84A" stroke="#FFF8EC" stroke-width="8"/>
+
+  <!-- Fork -->
+  <path fill="#23263A" d="M285 275 V328 Q285 352 309 357 V474 Q309 480 315 480 Q321 480 321 474 V357 Q345 352 345 328 V275 H336 V324 H328 V275 H319 V324 H311 V275 H302 V324 H294 V275 Z"/>
+
+  <!-- Knife -->
+  <g fill="#23263A">
+    <path d="M683 392 V300 Q683 268 693 254 Q713 292 713 352 V392 Z"/>
+    <rect x="680" y="388" width="34" height="90" rx="8"/>
+  </g>
+  <path d="M692 380 V302 Q692 285 695 276" fill="none" stroke="#4A5070" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Burger -->
+  <path fill="url(#bun)" d="M372 322 Q372 240 500 236 Q628 240 628 322 Z"/>
+  <g fill="#1E1A16"><ellipse cx="408" cy="280" rx="6" ry="4.5" transform="rotate(-20 408 280)"/><ellipse cx="440" cy="262" rx="6" ry="4.5" transform="rotate(10 440 262)"/><ellipse cx="470" cy="250" rx="6" ry="4.5" transform="rotate(-30 470 250)"/><ellipse cx="512" cy="248" rx="6" ry="4.5" transform="rotate(15 512 248)"/><ellipse cx="545" cy="258" rx="6" ry="4.5" transform="rotate(-10 545 258)"/><ellipse cx="578" cy="270" rx="6" ry="4.5" transform="rotate(25 578 270)"/><ellipse cx="605" cy="290" rx="6" ry="4.5" transform="rotate(-15 605 290)"/><ellipse cx="455" cy="288" rx="6" ry="4.5" transform="rotate(20 455 288)"/><ellipse cx="498" cy="276" rx="6" ry="4.5" transform="rotate(-25 498 276)"/><ellipse cx="540" cy="286" rx="6" ry="4.5" transform="rotate(5 540 286)"/><ellipse cx="575" cy="300" rx="6" ry="4.5" transform="rotate(-35 575 300)"/><ellipse cx="425" cy="305" rx="6" ry="4.5" transform="rotate(30 425 305)"/></g>
+  <g fill="#D7262B">
+    <rect x="372" y="334" width="76" height="17" rx="5"/>
+    <rect x="464" y="338" width="78" height="17" rx="5"/>
+    <rect x="556" y="326" width="76" height="17" rx="5"/>
+  </g>
+  <rect x="356" y="362" width="282" height="36" rx="18" fill="url(#patty)"/>
+  <path d="M362 416 q12 -14 24 0 t24 0 t24 0 t24 0 t24 0 t24 0 t24 0 t24 0 t24 0 t24 0 t24 0 t24 0" fill="none" stroke="#8DC63F" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <path fill="url(#bun)" d="M380 452 Q380 438 402 438 H608 Q630 438 630 452 Q630 474 602 477 H408 Q380 474 380 452 Z"/>
 </svg>
