@@ -22,6 +22,10 @@ Open `index.html` in a browser, or serve the folder:
 python3 -m http.server 8000
 ```
 
+## Deployment
+
+Merging into `main` deploys to the VPS (Caddy) through GitHub Actions. One-time setup: [docs/DEPLOY.md](docs/DEPLOY.md).
+
 ## Opening hours
 
 Edit both places when hours change:
